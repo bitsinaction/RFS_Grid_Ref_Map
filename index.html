@@ -1,0 +1,28 @@
+<html>
+  <head>
+  <link rel="shortcut icon" href="./libs/images/index.ico">  
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title>RFS Grid Reference Plot for Zone 56J</title>
+  
+   <script type="text/javascript" src="./libs/leaflet.js"></script>
+   <link rel="stylesheet" type="text/css" href="./libs/leaflet.css">
+   <script type="text/javascript" src="./libs/L.LatLng.UTM.js"></script>
+   <script type="text/javascript" src="./libs/jquery.min.js"></script>       
+   <script src='https://unpkg.com/@turf/turf/turf.min.js'></script>
+   
+   <script type="text/javascript" src="./index.js"></script>
+   <link rel="stylesheet" type="text/css" href="./index.css"> 
+    
+</head>
+<body>
+  
+<div id="inputs">RFS 6 digit grid ref: <input id="easting" maxlength="3" placeholder="easting"> <input id="northing" maxlength="3" placeholder="northing">&nbsp;<input id="plot" type='button' value="Plot">
+
+<input class="zonesSwitch" type="checkbox" checked=checked id="54" /> Zone 54 <input class="zonesSwitch" type="checkbox" checked=checked  id="55"  /> Zone 55 <input class="zonesSwitch" type="checkbox" checked=checked id="56" /> Zone 56
+&nbsp;<input id="about" type='button' value="About">
+</div>
+<div id="map"></div>
+
+<iframe id="readme" src="./readme.html"></iframe>
+</body>
+</html>  
