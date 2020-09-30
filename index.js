@@ -173,8 +173,14 @@ $("#plot").on("click",function(){
 
 })
 	
-$("#about").on("click",function(){
+$("#clear").on("click",function(){
 	$("#readme").toggle();
+});
+	
+$("#about").on("click",function(){
+	$(".leaflet-marker-icon").remove();
+	$(".leaflet-popup").remove();
+	$(".leaflet-marker-shadow").remove();
 });	
 	   
 });
