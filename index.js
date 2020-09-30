@@ -174,13 +174,13 @@ $("#plot").on("click",function(){
 })
 	
 $("#clear").on("click",function(){
-	$("#readme").toggle();
+	$(".leaflet-marker-icon").remove();
+	$(".leaflet-popup").remove();
+	$(".leaflet-marker-shadow").remove();	
 });
 	
 $("#about").on("click",function(){
-	$(".leaflet-marker-icon").remove();
-	$(".leaflet-popup").remove();
-	$(".leaflet-marker-shadow").remove();
+	$("#readme").toggle();
 });	
 	   
 });
